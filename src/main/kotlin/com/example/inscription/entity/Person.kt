@@ -13,12 +13,14 @@ class Person {
 
     var firstName: String? = ""
     var lastName: String? = ""
+    var identificationNumber: Int? = 0
 
     constructor() {}
 
-    constructor(firstName: String, lastName: String) {
+    constructor(firstName: String, lastName: String, identificationNumber : Int) {
         this.firstName = firstName
         this.lastName = lastName
+        this.identificationNumber = identificationNumber
     }
 
 

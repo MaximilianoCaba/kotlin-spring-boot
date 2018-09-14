@@ -24,11 +24,4 @@ class InscriptionController {
         return personService.getPerson(id)
     }
 
-    @GetMapping("/newPerson/{firstName}/{lastName}")
-    fun savePerson(@PathVariable firstName: String, @PathVariable lastName: String): Person {
-
-        val person = Person(firstName, lastName)
-        return personService.savePerson(person)
-    }
-
 }
